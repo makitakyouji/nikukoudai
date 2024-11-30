@@ -1,0 +1,74 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Arial', sans-serif; /* 読みやすいフォント */
+    background-color: #f0f8ff; /* 明るい青系の背景 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ビューポート全体をカバー */
+}
+
+/* 見出しのスタイル */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* フォーム全体 */
+form {
+    background-color: #fff; /* フォームの背景を白に設定 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影で浮き上がる効果 */
+    width: 100%;
+    max-width: 400px; /* フォームの最大幅を制限 */
+}
+
+/* ラベルのスタイル */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* フィールドの幅をフォームに合わせる */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* 控えめな境界線 */
+    border-radius: 5px; /* 柔らかい角丸 */
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* テキストエリア */
+textarea {
+    height: 100px; /* デフォルトの高さを指定 */
+    resize: vertical; /* ユーザーが高さを調整可能に */
+}
+
+/* 送信ボタンのスタイル */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF; /* 青系の目立つボタン */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* ホバー時のスムーズな効果 */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* ホバー時に色を濃くする */
+}
